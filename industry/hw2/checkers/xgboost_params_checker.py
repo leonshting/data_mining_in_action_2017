@@ -32,11 +32,12 @@ class Checker(object):
                 estimator, self.bioresponce_data, self.bioresponce_target,
                 scoring = 'accuracy', cv = 3
             ))
-        except Exception, msg:
+        except Exception(msg):
             score = None
         
         return score
 
 
 if __name__ == '__main__':
-    print Checker().check(SCRIPT_DIR + '/xgboost_params_example.json')
+    print(Checker().check(SCRIPT_DIR + '/xgboost_params_example.json'))
+
