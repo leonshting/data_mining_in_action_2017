@@ -15,16 +15,17 @@ class Checker(object):
 
     def check(self, script_path):
         gb_impl = imp.load_source('gb_impl', script_path)
-        try:
-            algo = gb_impl.SimpleGB(
+        #try:
+        print(gb_impl)
+        algo = gb_impl.SimpleGB(
                 tree_params_dict=gb_impl.TREE_PARAMS_DICT,
                 iters=100,
                 tau=gb_impl.TAU
-            )
-            return np.mean(cross_val_score(algo, self.X_data, self.y_data, cv=5, scoring='neg_mean_squared_error'))
-        except:
-            return None
+        )
+        return np.mean(cross_val_score(algo, self.X_data, self.y_data, cv=5, scoring='neg_mean_squared_error'))
+        #except:
+        #    return None
 
 
 if __name__ == '__main__':
-    print Checker().check(SCRIPT_DIR + '/gb_impl_example.py')
+    print(Checker().check(SCRIPT_DIR + '/gb_impl_example.py'))
