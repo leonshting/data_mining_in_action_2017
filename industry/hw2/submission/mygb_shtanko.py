@@ -3,7 +3,7 @@ from sklearn.tree import DecisionTreeRegressor
 import numpy as np
 
 
-TREE_PARAMS_DICT = {}
+TREE_PARAMS_DICT = {'max_depth':100, 'min_samples_leaf':5}
 TAU = 0.07
 
 
