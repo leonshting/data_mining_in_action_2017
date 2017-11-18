@@ -50,11 +50,11 @@ class Checker(object):
                 cv=3
             ))
         except:
-            print "Unexpected error:", sys.exc_info()[0]
+            print ("Unexpected error:", sys.exc_info()[0])
             score = None
         
         return score
 
 
 if __name__ == '__main__':
-    print Checker().check(SCRIPT_DIR + '/text_classification_params_example.json')
+    print (Checker().check(SCRIPT_DIR + '/text_classification_params_example.json'))

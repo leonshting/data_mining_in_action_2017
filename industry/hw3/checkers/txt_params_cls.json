@@ -1,0 +1,1 @@
+{"count_vectorizer_params": {"max_df": 0.175, "min_df": 1, "ngram_range": [1, 2]}, "logistic_regression_params": {"C": 12.5, "penalty": "l2"}, "tfidf_transformer_params":{}}

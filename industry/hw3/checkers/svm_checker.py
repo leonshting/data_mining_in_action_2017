@@ -35,4 +35,4 @@ class Checker(object):
 
 
 if __name__ == '__main__':
-    print Checker().check(SCRIPT_DIR + '/svm_impl_example.py')
+    print(Checker().check(SCRIPT_DIR + '/svm_impl_example.py'))
